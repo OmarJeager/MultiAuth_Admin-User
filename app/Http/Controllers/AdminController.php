@@ -11,7 +11,7 @@ class AdminController extends Controller
     {
         $machines = MachineEntry::all();
         $sertissages = Sertissage::all();
-        return view('admin.sertissage.index', compact('machines'));
+        return view('admin.sertissage.index', compact('machines','sertissages'));
     }
     public function create()
     {
